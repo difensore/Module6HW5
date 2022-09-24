@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Create Book";
+}
+
+<h2>Додавання нової книги</h2>
+<form method="post">
+    <p>
+        <label>Id</label><br />
+        <input name="Id" type="number" />
+    </p>
+    <p>
+        <label>Назва</label><br />
+        <input name="Name" />
+    </p>
+    <p>
+        <label>Автор:</label><br />
+        <input name="Author"  />
+    </p>
+    <p>
+        <label>Рік видання:</label><br />
+        <input name="YearofPublishing" type="number" />
+    </p>
+    <p>
+        <label>Ціна:</label><br />
+        <input name="Price" type="number" />
+    </p>
+
+    <input type="submit" value="Відправити" />
+</form>

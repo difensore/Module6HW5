@@ -1,0 +1,26 @@
+﻿@model Book
+@{
+    ViewData["Title"] = "Edit Book";
+}
+
+<h2>Редактування книги</h2>
+<form asp-route-Id="@Model.Id" method="post">   
+    <p>
+        <label>Назва</label><br />
+        <input value="@Model.Name" name="Name" />
+    </p>
+    <p>
+        <label>Автор:</label><br />
+        <input value="@Model.Author" name="Author" />
+    </p>
+    <p>
+        <label>Рік видання:</label><br />
+        <input value="@Model.YearofPublishing" name="YearofPublishing" type="number" />
+    </p>
+    <p>
+        <label>Ціна:</label><br />
+        <input value="@Model.Price" name="Price" type="number" />
+    </p>
+
+    <input type="submit" value="Відправити" />
+</form>
